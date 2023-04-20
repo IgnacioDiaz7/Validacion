@@ -7,11 +7,30 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
   </head>
   <body>
-    <h1>Hola</h1>
+    <div class="container">
+        <form id="miFormulario">
+            <label for="nombre">Nombre*</label>
+            <input type="text" id="itNombre" class="campo"><br>
+            <div id="mensaje1" class="errores">Ingrese su nombre</div>
+
+
+            <label for="correo">Correo*</label>
+            <input type="email" id="itCorreo" class="campo"><br>
+            <div id="mensaje2" class="errores">Ingrese su correo</div>
+
+            <label for="asunto">Asunto*</label>
+            <input type="text" id="itAsunto" class="campo"><br>
+            <div id="mensaje3" class="errores">Ingrese asunto</div>
+
+            <input type="submit" id="bEnviar" value="Enviar datos" class="boton">
+
+
+        </form>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
